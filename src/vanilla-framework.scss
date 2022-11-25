@@ -1,7 +1,29 @@
 @import "node_modules/vanilla-framework";
 @include vanilla;
 
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
 .p-card {
   border-top: 4px solid #a87ca0;
   box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.25);
+}
+
+main {
+  margin-block-start: 1rem;
+}
+
+footer {
+  &.p-strip--light {
+    padding-block: 1rem;
+  }
+
+  p {
+    margin-block: 0.5rem;
+  }
 }

@@ -7,8 +7,8 @@ import renderPostsCards from "./ui/render-posts-cards";
 const main = async () => {
   const posts = await fetchPosts();
 
-  const app = document.querySelector("#app");
-  app.innerHTML = renderPostsCards(posts);
+  const targetEl = document.querySelector("#posts-cards");
+  targetEl.innerHTML = renderPostsCards(posts);
 };
 
 main();

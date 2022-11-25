@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
-  <title>
-    <%= htmlWebpackPlugin.options.title %>
-  </title>
-</head>
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+    <title>
+      <%= htmlWebpackPlugin.options.title %>
+    </title>
+  </head>
 
-<body>
+  <body>
 
-  <div class="row">
-    <div class="col-12">
+    <div id="app">
+      <main>
+        <div class="row">
+          <div class="col-12">
+            <div class="heading u-sv3">
+              <h1 class="u-no-margin--bottom">
+                <%= htmlWebpackPlugin.options.title %>
+              </h1>
+            </div>
+            <div id="posts-cards">Loading...</div>
+          </div>
+        </div>
+      </main>
 
-      <div class="heading u-sv2">
-        <h1 class="u-no-margin--bottom">
-          <%= htmlWebpackPlugin.options.title %>
-        </h1>
-        <small>By <a href="https://ivan-rodrigues.com">Ivan Rodrigues</a><small>
-      </div>
-
-      <div id="app">Loading...</div>
-
+      <footer class="p-strip--light">
+        <nav class="row" aria-label="Footer">
+          <div class="col-12">
+            <p>By <a target="_blank" href="https://ivan-rodrigues.com">Ivan Rodrigues</a>.</p>
+            <p>Get the source code on <a target="_blank" href="https://github.com/Ivanho92/canonical-web-developer">Github</a>.</p>
+          </div>
+        </nav>
+      </footer>
     </div>
-  </div>
 
-</body>
+  </body>
 
 </html>
