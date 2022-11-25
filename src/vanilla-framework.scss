@@ -1,0 +1,7 @@
+@import "node_modules/vanilla-framework";
+@include vanilla;
+
+.p-card {
+  border-top: 4px solid #a87ca0;
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.25);
+}
